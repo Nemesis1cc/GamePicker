@@ -1,0 +1,32 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net7.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DebugType>none</DebugType>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <DebugType>none</DebugType>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Resources\ArrowLeft.png" />
+    <None Remove="Resources\ArrowRight.png" />
+    <None Remove="Resources\Background.png" />
+    <None Remove="Resources\ImageLeft.png" />
+    <None Remove="Resources\ImageRight.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Resources\ArrowLeft.png" />
+    <Resource Include="Resources\ArrowRight.png" />
+    <Resource Include="Resources\Background.png" />
+  </ItemGroup>
+
+</Project>
